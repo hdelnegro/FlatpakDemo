@@ -1,0 +1,30 @@
+{
+    "app-id": "com.example.FlatpakDemo",
+    "runtime": "com.redhat.Platform",
+    "runtime-version": "el9",
+    "sdk": "com.redhat.Sdk",
+    "command": "main.py",
+    "finish-args": [
+        "--share=network",
+        "--socket=x11",
+        "--socket=wayland",
+        "--socket=wayland",
+        "--talk-name=org.freedesktop.portal.Desktop"
+    ],
+    "modules": [
+        {
+            "name": "FlatpakDemo",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install -r requirements.txt"
+            ],
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": "../src"
+                }
+            ]
+        }
+    ],
+    "icon": "assets/icon.svg"
+}
