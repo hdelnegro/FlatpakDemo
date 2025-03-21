@@ -37,7 +37,7 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/libfuse/libfuse/releases/download/fuse-3.10.5/fuse-3.10.5.tar.xz",
-                    "sha256": "a6c8c8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8"
+                    "sha256": "b2e283485d47404ac896dd0bb7f7ba81e1470838e677e45f659804c3a3b69666"
                 }
             ]
         }
