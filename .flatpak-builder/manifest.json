@@ -9,7 +9,8 @@
         "--socket=x11",
         "--socket=wayland",
         "--socket=wayland",
-        "--talk-name=org.freedesktop.portal.Desktop"
+        "--talk-name=org.freedesktop.portal.Desktop",
+        "--device=all"
     ],
     "modules": [
         {
@@ -22,6 +23,21 @@
                 {
                     "type": "dir",
                     "path": "../src"
+                }
+            ]
+        },
+        {
+            "name": "fuse",
+            "buildsystem": "simple",
+            "build-commands": [
+                "make",
+                "make install"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/libfuse/libfuse/releases/download/fuse-3.10.5/fuse-3.10.5.tar.xz",
+                    "sha256": "a6c8c8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8"
                 }
             ]
         }
