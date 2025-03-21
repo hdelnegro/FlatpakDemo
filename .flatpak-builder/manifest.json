@@ -17,7 +17,7 @@
             "name": "FlatpakDemo",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install -r requirements.txt"
+                "pip3 install -r ../src/requirements.txt"
             ],
             "sources": [
                 {
